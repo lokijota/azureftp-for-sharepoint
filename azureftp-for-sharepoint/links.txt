@@ -1,6 +1,0 @@
-Instalar serviços windows com WIX
-
-http://www.chrissurfleet.co.uk/post/2011/08/04/Creating-windows-service-installer-with-Visual-Studio-and-WiX.aspx
-
-http://blog.tentaclesoftware.com/archive/2009/01/01/21.aspx
-http://stackoverflow.com/questions/11990678/how-to-install-windows-service-using-wix-and-not-using-serviceinstall
