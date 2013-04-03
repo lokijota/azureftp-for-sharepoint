@@ -1,0 +1,44 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "09 Dependencies", "09 Dependencies", "{D32CC044-DC1F-4FD5-BFFE-5A09AD83DD52}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SharePoint2013", "SharePoint2013", "{93F48884-D915-4764-BBED-97F4ACA13F58}"
+	ProjectSection(SolutionItems) = preProject
+		09 Dependencies\SharePoint2013\sharepointclientcomponents_x64.msi = 09 Dependencies\SharePoint2013\sharepointclientcomponents_x64.msi
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01 Core", "01 Core", "{4FFDD784-6433-46EF-98C3-9CCB693C4BE4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02 Client", "02 Client", "{B3FA2132-074F-4590-A45B-FC99DAF00223}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03 Server", "03 Server", "{2BBCF089-3F2C-4CDE-A19F-83F45AECCC00}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "azureftp-for-sharepoint.server", "03 Server\azureftp-for-sharepoint.server\azureftp-for-sharepoint.server.csproj", "{946335FD-A98D-40C3-828C-28E033C846F5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "azureftp-for-sharepoint.client", "02 Client\azureftp-for-sharepoint.client\azureftp-for-sharepoint.client.csproj", "{2A9B1617-6E29-4755-9EBB-66501830B918}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{946335FD-A98D-40C3-828C-28E033C846F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{946335FD-A98D-40C3-828C-28E033C846F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{946335FD-A98D-40C3-828C-28E033C846F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{946335FD-A98D-40C3-828C-28E033C846F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A9B1617-6E29-4755-9EBB-66501830B918}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A9B1617-6E29-4755-9EBB-66501830B918}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A9B1617-6E29-4755-9EBB-66501830B918}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A9B1617-6E29-4755-9EBB-66501830B918}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{93F48884-D915-4764-BBED-97F4ACA13F58} = {D32CC044-DC1F-4FD5-BFFE-5A09AD83DD52}
+		{2A9B1617-6E29-4755-9EBB-66501830B918} = {B3FA2132-074F-4590-A45B-FC99DAF00223}
+		{946335FD-A98D-40C3-828C-28E033C846F5} = {2BBCF089-3F2C-4CDE-A19F-83F45AECCC00}
+	EndGlobalSection
+EndGlobal
