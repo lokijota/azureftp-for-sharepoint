@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+    <Fragment>
+        <DirectoryRef Id="INSTALLLOCATION">
+            <w:Component Id="cmp33FD6D3452A6CAC19D21752E9C45D379" Guid="{6A34BF14-A1E7-4346-A1AC-7F05D1E69EC6}" KeyPath="yes" xmlns:w="http://schemas.microsoft.com/wix/2006/wi" />
+            <Component Id="cmp35E16993B5A542E6E51241FC9FD3010E" Guid="{9C1FEF61-9099-4D7A-9904-D1A246108E71}">
+                <File Id="filD540020D21E767A832F94F6C73A712EE" KeyPath="yes" Source="$(var.BasePath)\azureftp-for-sharepoint.server.pdb" />
+            </Component>
+            <Component Id="cmp57DE82AD00A5820E36B6C689B65C154C" Guid="{5F6E0E9C-FEA6-4742-AC72-53F91CCBF3B2}">
+                <File Id="fil406EA73C6A990413F7666FF1D012ED16" KeyPath="yes" Source="$(var.BasePath)\azureftp-for-sharepoint.server.vshost.exe" />
+            </Component>
+            <Component Id="cmp01847B90009F993D011E3D8C4A6E592E" Guid="{1C2DEE6D-F079-4917-878D-A1B6D06B506E}">
+                <File Id="fil3ED93F244FDE0C317844DFA85F767323" KeyPath="yes" Source="$(var.BasePath)\azureftp-for-sharepoint.server.vshost.exe.manifest" />
+            </Component>
+        </DirectoryRef>
+    </Fragment>
+    <Fragment>
+        <ComponentGroup Id="azureftp-for-sharepoint.server_Project">
+            <ComponentRef Id="cmp33FD6D3452A6CAC19D21752E9C45D379" />
+            <ComponentRef Id="cmp35E16993B5A542E6E51241FC9FD3010E" />
+            <ComponentRef Id="cmp57DE82AD00A5820E36B6C689B65C154C" />
+            <ComponentRef Id="cmp01847B90009F993D011E3D8C4A6E592E" />
+        </ComponentGroup>
+    </Fragment>
+</Wix>
