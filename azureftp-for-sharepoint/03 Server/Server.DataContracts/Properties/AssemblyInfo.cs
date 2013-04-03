@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("azureftp-for-sharepoint.server")]
+[assembly: AssemblyTitle("Server.DataContracts")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("4guysfrompalmira")]
-[assembly: AssemblyProduct("azureftp-for-sharepoint.server")]
+[assembly: AssemblyProduct("Server.DataContracts")]
 [assembly: AssemblyCopyright("Copyright ©  2013")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("949efb49-4034-4575-807a-89f25567dd71")]
+[assembly: Guid("920cd802-5dfb-4c52-ba0f-5edb97b51b37")]
 
 // Version information for an assembly consists of the following four values:
 //

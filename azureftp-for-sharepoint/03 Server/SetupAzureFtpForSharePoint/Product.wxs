@@ -21,12 +21,7 @@
             Account="LocalSystem"
             ErrorControl="ignore"
             Interactive="no" />
-          <ServiceControl Id="StartService"
-            Start="install"
-            Stop="both"
-            Remove="uninstall"
-            Name="AzureFtpForSharePointServer"
-            Wait="yes" />
+          <ServiceControl Id="StartService" Start="install" Stop="both" Remove="uninstall" Name="AzureFtpForSharePointServer" Wait="yes" />
         </Component>
       </Directory>
     </Directory>

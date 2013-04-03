@@ -4,16 +4,15 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{946335FD-A98D-40C3-828C-28E033C846F5}</ProjectGuid>
-    <OutputType>WinExe</OutputType>
+    <ProjectGuid>{7001C3E1-CC94-42AC-837B-9AB0A278391E}</ProjectGuid>
+    <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>azureftp_for_sharepoint.server</RootNamespace>
-    <AssemblyName>azureftp-for-sharepoint.server</AssemblyName>
+    <RootNamespace>AzureFtpForSharePoint.Core.SharePointLibrary</RootNamespace>
+    <AssemblyName>AzureFtpForSharePoint.Core.SharePointLibrary</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -23,7 +22,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -35,57 +33,15 @@
     <Reference Include="Microsoft.SharePoint.Client, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL" />
     <Reference Include="Microsoft.SharePoint.Client.Runtime, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL" />
     <Reference Include="System" />
-    <Reference Include="System.Configuration.Install" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Management" />
-    <Reference Include="System.ServiceModel" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
-    <Reference Include="System.ServiceProcess" />
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ProjectInstaller.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="ProjectInstaller.Designer.cs">
-      <DependentUpon>ProjectInstaller.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Server.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Server.Designer.cs">
-      <DependentUpon>Server.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="ProjectInstaller.resx">
-      <DependentUpon>ProjectInstaller.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Server.resx">
-      <DependentUpon>Server.cs</DependentUpon>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Server.DataContracts\Server.DataContracts.csproj">
-      <Project>{4b0b5dd2-3e62-4ba7-b18f-a45fbbdc3a4f}</Project>
-      <Name>Server.DataContracts</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Server.Implementation\Server.Implementation.csproj">
-      <Project>{df5d7133-67a1-4065-97fc-439fe14127a8}</Project>
-      <Name>Server.Implementation</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Server.ServiceContracts\Server.ServiceContracts.csproj">
-      <Project>{69d3e71b-e9f7-4e0c-98a1-d14b3111b45e}</Project>
-      <Name>Server.ServiceContracts</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
