@@ -34,20 +34,48 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WIX", "WIX", "{40B9CFFA-C07
 		09 Dependencies\WIX\wix37.exe = 09 Dependencies\WIX\wix37.exe
 	EndProjectSection
 EndProject
+Project("{930C7802-8A8C-48F9-8165-68863BCCD9DD}") = "SetupAzureFtpForSharePoint", "03 Server\SetupAzureFtpForSharePoint\SetupAzureFtpForSharePoint.wixproj", "{53273690-51BB-43BB-8BDD-88760BAFEE30}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|x86 = Debug|x86
 		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{946335FD-A98D-40C3-828C-28E033C846F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{946335FD-A98D-40C3-828C-28E033C846F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{946335FD-A98D-40C3-828C-28E033C846F5}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{946335FD-A98D-40C3-828C-28E033C846F5}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{946335FD-A98D-40C3-828C-28E033C846F5}.Debug|x86.ActiveCfg = Debug|Any CPU
 		{946335FD-A98D-40C3-828C-28E033C846F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{946335FD-A98D-40C3-828C-28E033C846F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{946335FD-A98D-40C3-828C-28E033C846F5}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{946335FD-A98D-40C3-828C-28E033C846F5}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{946335FD-A98D-40C3-828C-28E033C846F5}.Release|x86.ActiveCfg = Release|Any CPU
 		{2A9B1617-6E29-4755-9EBB-66501830B918}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{2A9B1617-6E29-4755-9EBB-66501830B918}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A9B1617-6E29-4755-9EBB-66501830B918}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{2A9B1617-6E29-4755-9EBB-66501830B918}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{2A9B1617-6E29-4755-9EBB-66501830B918}.Debug|x86.ActiveCfg = Debug|Any CPU
 		{2A9B1617-6E29-4755-9EBB-66501830B918}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2A9B1617-6E29-4755-9EBB-66501830B918}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A9B1617-6E29-4755-9EBB-66501830B918}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{2A9B1617-6E29-4755-9EBB-66501830B918}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{2A9B1617-6E29-4755-9EBB-66501830B918}.Release|x86.ActiveCfg = Release|Any CPU
+		{53273690-51BB-43BB-8BDD-88760BAFEE30}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{53273690-51BB-43BB-8BDD-88760BAFEE30}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{53273690-51BB-43BB-8BDD-88760BAFEE30}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{53273690-51BB-43BB-8BDD-88760BAFEE30}.Debug|x86.ActiveCfg = Debug|x86
+		{53273690-51BB-43BB-8BDD-88760BAFEE30}.Debug|x86.Build.0 = Debug|x86
+		{53273690-51BB-43BB-8BDD-88760BAFEE30}.Release|Any CPU.ActiveCfg = Release|x86
+		{53273690-51BB-43BB-8BDD-88760BAFEE30}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{53273690-51BB-43BB-8BDD-88760BAFEE30}.Release|Mixed Platforms.Build.0 = Release|x86
+		{53273690-51BB-43BB-8BDD-88760BAFEE30}.Release|x86.ActiveCfg = Release|x86
+		{53273690-51BB-43BB-8BDD-88760BAFEE30}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -58,5 +86,6 @@ Global
 		{40B9CFFA-C077-45B3-A97F-937DEA4BDA77} = {D32CC044-DC1F-4FD5-BFFE-5A09AD83DD52}
 		{2A9B1617-6E29-4755-9EBB-66501830B918} = {B3FA2132-074F-4590-A45B-FC99DAF00223}
 		{946335FD-A98D-40C3-828C-28E033C846F5} = {2BBCF089-3F2C-4CDE-A19F-83F45AECCC00}
+		{53273690-51BB-43BB-8BDD-88760BAFEE30} = {2BBCF089-3F2C-4CDE-A19F-83F45AECCC00}
 	EndGlobalSection
 EndGlobal
