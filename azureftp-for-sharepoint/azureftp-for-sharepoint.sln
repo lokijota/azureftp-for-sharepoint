@@ -18,6 +18,20 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "azureftp-for-sharepoint.ser
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "azureftp-for-sharepoint.client", "02 Client\azureftp-for-sharepoint.client\azureftp-for-sharepoint.client.csproj", "{2A9B1617-6E29-4755-9EBB-66501830B918}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "08 Documents", "08 Documents", "{2EA4D395-A448-49D0-AE86-739C5DF89AD3}"
+	ProjectSection(SolutionItems) = preProject
+		08 Documents\todo.txt = 08 Documents\todo.txt
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "07 Testers", "07 Testers", "{9CB0910D-4658-4370-99BD-C33A131EC5D1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "InstallShieldLimitedEdition", "InstallShieldLimitedEdition", "{30201ABA-1B2C-4A41-99B0-688314F965CB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WIX", "WIX", "{40B9CFFA-C077-45B3-A97F-937DEA4BDA77}"
+	ProjectSection(SolutionItems) = preProject
+		09 Dependencies\WIX\wix37.exe = 09 Dependencies\WIX\wix37.exe
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -38,6 +52,8 @@ Global
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{93F48884-D915-4764-BBED-97F4ACA13F58} = {D32CC044-DC1F-4FD5-BFFE-5A09AD83DD52}
+		{30201ABA-1B2C-4A41-99B0-688314F965CB} = {D32CC044-DC1F-4FD5-BFFE-5A09AD83DD52}
+		{40B9CFFA-C077-45B3-A97F-937DEA4BDA77} = {D32CC044-DC1F-4FD5-BFFE-5A09AD83DD52}
 		{2A9B1617-6E29-4755-9EBB-66501830B918} = {B3FA2132-074F-4590-A45B-FC99DAF00223}
 		{946335FD-A98D-40C3-828C-28E033C846F5} = {2BBCF089-3F2C-4CDE-A19F-83F45AECCC00}
 	EndGlobalSection

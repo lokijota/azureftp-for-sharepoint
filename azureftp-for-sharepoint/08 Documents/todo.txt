@@ -8,3 +8,10 @@ inc sintaxe de comandos a suportar no cliente
 4) desenhar camada de serviços
 
 5) procurar parser de texto para componente cliente
+
+6) colocar ficheiro de settings de stylecop
+
+7) escrever mini-doc de code conventions
+
+
+Instalador: InstallShieldLimitedEdition ou WIX?

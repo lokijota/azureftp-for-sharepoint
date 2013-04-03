@@ -16,7 +16,7 @@ namespace azureftp_for_sharepoint.server
             ServiceBase[] ServicesToRun;
             ServicesToRun = new ServiceBase[] 
             { 
-                new Service1() 
+                new Server() 
             };
             ServiceBase.Run(ServicesToRun);
         }
