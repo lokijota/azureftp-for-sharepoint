@@ -1,0 +1,31 @@
+1- Download GIT client for windows from here:
+http://git-scm.com/download/win
+
+
+2- confi
+$ git config --global user.name "John Doe"
+$ git config --global user.email johndoe@example.com
+$ git config --global core.editor "notepad.exe"
+
+3- na pasta do repo Git correr:
+
+$ git init
+
+4- obter o projecto
+
+git clone https://github.com/lokijota/azureftp-for-sharepoint
+
+5- uso normal:
+
+git add .   			-- adicionar a repo local
+git commit -m "mensagem"	-- checkin repositório local	
+git remote -v   		-- para ver repositórios remotos
+git push origin master     	-- para fazer upload para github
+
+
+Adicionar instalador a projecto de serviço windows
+http://msdn.microsoft.com/en-us/library/zt39148a%28v=vs.100%29.aspx
+
+
+C:\Users\jota\AppData\Local\Temp
+
