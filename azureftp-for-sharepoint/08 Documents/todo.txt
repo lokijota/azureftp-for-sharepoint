@@ -1,0 +1,10 @@
+1) desenhar arquitectura de projecto
+inc sintaxe de comandos a suportar no cliente
+
+2) adicionar referências de service bus
+
+3) fazer tester para interagir com sharepoint localmente para testar api
+
+4) desenhar camada de serviços
+
+5) procurar parser de texto para componente cliente
