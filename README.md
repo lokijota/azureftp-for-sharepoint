@@ -13,4 +13,8 @@ Code will be developed in .Net 4.5 and x64.
 
 The base code structure and architecture document will be posted in the next few days.[2013.04.03]
 
-[Software requirements](Software Requirements.md)
+Current status as of 2013.04.03:
+- created all the placeholder projects for the server-side;
+- instaler for windows service working and services responding (not still wired to SB);
+- service/data contracts still in early draft forms;
+- sharepoint library started, still in early tests
