@@ -2,34 +2,34 @@
 <Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
     <Fragment>
         <DirectoryRef Id="INSTALLLOCATION">
-            <Component Id="cmp33FD6D3452A6CAC19D21752E9C45D379" Guid="{CC809118-4623-4B57-8DFB-FD73263C9D69}">
+            <Component Id="cmp33FD6D3452A6CAC19D21752E9C45D379" Guid="{300517AE-A089-49F8-851D-2230C8A83CC0}">
                 <File Id="filD9E47856958A4FD41C2992A6BBF89BC1" KeyPath="yes" Source="$(var.BasePath)\azureftp-for-sharepoint.server.exe" />
             </Component>
-            <Component Id="cmpC527E471EA55A6E08FDDE5A0B566F2F6" Guid="{2435912A-8755-4F1C-BB95-035EE5837D9C}">
+            <Component Id="cmpC527E471EA55A6E08FDDE5A0B566F2F6" Guid="{F49F1489-7097-4620-A109-06C2053F93FE}">
                 <File Id="fil9BF75DDECDC4921BA58C885C5E1A3E6D" KeyPath="yes" Source="$(var.BasePath)\azureftp-for-sharepoint.server.exe.config" />
             </Component>
-            <Component Id="cmp35E16993B5A542E6E51241FC9FD3010E" Guid="{4AE58626-0220-4FF3-877C-CC1D477B0363}">
+            <Component Id="cmp35E16993B5A542E6E51241FC9FD3010E" Guid="{67E1814B-BA15-4971-8FF3-060EF4B131BE}">
                 <File Id="filD540020D21E767A832F94F6C73A712EE" KeyPath="yes" Source="$(var.BasePath)\azureftp-for-sharepoint.server.pdb" />
             </Component>
-            <Component Id="cmp57DE82AD00A5820E36B6C689B65C154C" Guid="{0C8F423C-7315-4ED8-A299-4857E12E368E}">
+            <Component Id="cmp57DE82AD00A5820E36B6C689B65C154C" Guid="{E2F6CF79-1D5C-4CB4-A38C-F26A4F0284A4}">
                 <File Id="fil406EA73C6A990413F7666FF1D012ED16" KeyPath="yes" Source="$(var.BasePath)\azureftp-for-sharepoint.server.vshost.exe" />
             </Component>
-            <Component Id="cmp81AF928CB283B90BC8E0C6EE3B67F0C9" Guid="{382061AC-2D2B-4166-92F8-7A00CCA89654}">
+            <Component Id="cmp81AF928CB283B90BC8E0C6EE3B67F0C9" Guid="{BF8B6A05-E5C8-4AC2-A4E2-9F2FBECAC6EB}">
                 <File Id="fil98970C27F3664E5A5E9C725158111360" KeyPath="yes" Source="$(var.BasePath)\AzureFtpForSharePoint.Server.DataContracts.dll" />
             </Component>
-            <Component Id="cmpF0C997E93B4C69917BB49CF504071E78" Guid="{72D523AF-255E-40E5-A879-F8749148EBA6}">
+            <Component Id="cmpF0C997E93B4C69917BB49CF504071E78" Guid="{E923E96E-1F92-4E0B-949F-C27DA619C47F}">
                 <File Id="fil4879FA07E67027A43F93CBFB81D25F39" KeyPath="yes" Source="$(var.BasePath)\AzureFtpForSharePoint.Server.DataContracts.pdb" />
             </Component>
-            <Component Id="cmp65F2329CEA5F7D07E0A8A129F27551E2" Guid="{CB741431-E52D-4D7B-8222-7B703F6E2005}">
+            <Component Id="cmp65F2329CEA5F7D07E0A8A129F27551E2" Guid="{5E6574E0-6E7B-4C1F-B859-07F078F5D474}">
                 <File Id="fil58881FEDF1EEB8AD669B89429BA9FB68" KeyPath="yes" Source="$(var.BasePath)\AzureFtpForSharePoint.Server.Implementation.dll" />
             </Component>
-            <Component Id="cmp35C5399B9BD3CC41E3647094E8666714" Guid="{0F415765-A89B-49AB-BA29-B1BA1DF3B102}">
+            <Component Id="cmp35C5399B9BD3CC41E3647094E8666714" Guid="{41ADF93D-FAD9-439D-9C8C-4F1DD9E24AA1}">
                 <File Id="filA4C10FD5811B614C96BF8F03E89556D2" KeyPath="yes" Source="$(var.BasePath)\AzureFtpForSharePoint.Server.Implementation.pdb" />
             </Component>
-            <Component Id="cmp793DFB8FD0B2222EE76D0061AD450DD9" Guid="{53C40EA7-FB8B-4027-9FEF-90D88F8E7CC9}">
+            <Component Id="cmp793DFB8FD0B2222EE76D0061AD450DD9" Guid="{4BF638CA-CAC2-4030-8E77-5F6A1E8C71FA}">
                 <File Id="filB2E01513D6C38F4472AD4A9AD8C1F7EA" KeyPath="yes" Source="$(var.BasePath)\AzureFtpForSharePoint.Server.ServiceContracts.dll" />
             </Component>
-            <Component Id="cmp2A4D3A11FBB80984F1D50C404530C4B9" Guid="{7B012EC4-2629-45D0-93C3-8BE24A8D1B2D}">
+            <Component Id="cmp2A4D3A11FBB80984F1D50C404530C4B9" Guid="{938A1374-58A6-49C7-A58A-8090E85760F3}">
                 <File Id="fil233D672A1688269E1E3817740C436AF6" KeyPath="yes" Source="$(var.BasePath)\AzureFtpForSharePoint.Server.ServiceContracts.pdb" />
             </Component>
         </DirectoryRef>

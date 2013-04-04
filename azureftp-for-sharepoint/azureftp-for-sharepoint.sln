@@ -44,6 +44,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Server.Implementation", "03
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core.SharePointLibrary", "01 Core\Core.SharePointLibrary\Core.SharePointLibrary.csproj", "{7001C3E1-CC94-42AC-837B-9AB0A278391E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceTester", "07 Testers\ServiceTester\ServiceTester.csproj", "{C03E1AA5-4A75-46F3-846C-5A4298691260}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -124,6 +126,16 @@ Global
 		{7001C3E1-CC94-42AC-837B-9AB0A278391E}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{7001C3E1-CC94-42AC-837B-9AB0A278391E}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{7001C3E1-CC94-42AC-837B-9AB0A278391E}.Release|x86.ActiveCfg = Release|Any CPU
+		{C03E1AA5-4A75-46F3-846C-5A4298691260}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C03E1AA5-4A75-46F3-846C-5A4298691260}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C03E1AA5-4A75-46F3-846C-5A4298691260}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{C03E1AA5-4A75-46F3-846C-5A4298691260}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{C03E1AA5-4A75-46F3-846C-5A4298691260}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{C03E1AA5-4A75-46F3-846C-5A4298691260}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C03E1AA5-4A75-46F3-846C-5A4298691260}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C03E1AA5-4A75-46F3-846C-5A4298691260}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{C03E1AA5-4A75-46F3-846C-5A4298691260}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{C03E1AA5-4A75-46F3-846C-5A4298691260}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -139,5 +151,6 @@ Global
 		{69D3E71B-E9F7-4E0C-98A1-D14B3111B45E} = {2BBCF089-3F2C-4CDE-A19F-83F45AECCC00}
 		{4B0B5DD2-3E62-4BA7-B18F-A45FBBDC3A4F} = {2BBCF089-3F2C-4CDE-A19F-83F45AECCC00}
 		{DF5D7133-67A1-4065-97FC-439FE14127A8} = {2BBCF089-3F2C-4CDE-A19F-83F45AECCC00}
+		{C03E1AA5-4A75-46F3-846C-5A4298691260} = {9CB0910D-4658-4370-99BD-C33A131EC5D1}
 	EndGlobalSection
 EndGlobal

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="98547795-873f-4fab-bf49-61e90febdc5e" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:1972/SharePointFtpService/service" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="service.xsd" MetadataType="Schema" ID="9a4effac-4cd7-4efb-b397-fbba50338796" SourceId="1" SourceUrl="http://localhost:1972/SharePointFtpService/service?xsd=xsd1" />
+    <MetadataFile FileName="SharePointFtpService.wsdl" MetadataType="Wsdl" ID="639a9c4f-15f1-426a-8367-ab13f7871e27" SourceId="1" SourceUrl="http://localhost:1972/SharePointFtpService/service?wsdl" />
+    <MetadataFile FileName="service1.xsd" MetadataType="Schema" ID="395418ea-98cb-47aa-99bc-5ce219943a76" SourceId="1" SourceUrl="http://localhost:1972/SharePointFtpService/service?xsd=xsd0" />
+    <MetadataFile FileName="service2.xsd" MetadataType="Schema" ID="aee1dd86-e494-45d3-82f3-976385a5d625" SourceId="1" SourceUrl="http://localhost:1972/SharePointFtpService/service?xsd=xsd2" />
+    <MetadataFile FileName="service.wsdl" MetadataType="Wsdl" ID="f2a1ca71-0166-488f-8cdc-44ca4fd7ba57" SourceId="1" SourceUrl="http://localhost:1972/SharePointFtpService/service?wsdl=wsdl0" />
+    <MetadataFile FileName="service.disco" MetadataType="Disco" ID="f00f2c51-dc40-468f-a858-4bdc913a42cf" SourceId="1" SourceUrl="http://localhost:1972/SharePointFtpService/service?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
