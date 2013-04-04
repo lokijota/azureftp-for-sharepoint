@@ -27,8 +27,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "08 Documents", "08 Document
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "07 Testers", "07 Testers", "{9CB0910D-4658-4370-99BD-C33A131EC5D1}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "InstallShieldLimitedEdition", "InstallShieldLimitedEdition", "{30201ABA-1B2C-4A41-99B0-688314F965CB}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WIX", "WIX", "{40B9CFFA-C077-45B3-A97F-937DEA4BDA77}"
 	ProjectSection(SolutionItems) = preProject
 		09 Dependencies\WIX\wix37.exe = 09 Dependencies\WIX\wix37.exe
@@ -45,6 +43,19 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core.SharePointLibrary", "01 Core\Core.SharePointLibrary\Core.SharePointLibrary.csproj", "{7001C3E1-CC94-42AC-837B-9AB0A278391E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceTester", "07 Testers\ServiceTester\ServiceTester.csproj", "{C03E1AA5-4A75-46F3-846C-5A4298691260}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spike.Irony", "07 Testers\ServiceTester\Spike.Irony\Spike.Irony.csproj", "{4B2366B1-B341-4539-B25E-4BFF8D5F7899}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Irony", "Irony", "{BF06C7FE-A492-4F61-9179-F2CCCECE458E}"
+	ProjectSection(SolutionItems) = preProject
+		09 Dependencies\Irony\Irony_2013_03_10.zip = 09 Dependencies\Irony\Irony_2013_03_10.zip
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "bin", "bin", "{4DC7B03D-E252-49C7-9783-E121091CFDAF}"
+	ProjectSection(SolutionItems) = preProject
+		09 Dependencies\Irony\bin\Irony.dll = 09 Dependencies\Irony\bin\Irony.dll
+		09 Dependencies\Irony\bin\Irony.Interpreter.dll = 09 Dependencies\Irony\bin\Irony.Interpreter.dll
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -136,14 +147,24 @@ Global
 		{C03E1AA5-4A75-46F3-846C-5A4298691260}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{C03E1AA5-4A75-46F3-846C-5A4298691260}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{C03E1AA5-4A75-46F3-846C-5A4298691260}.Release|x86.ActiveCfg = Release|Any CPU
+		{4B2366B1-B341-4539-B25E-4BFF8D5F7899}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B2366B1-B341-4539-B25E-4BFF8D5F7899}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B2366B1-B341-4539-B25E-4BFF8D5F7899}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{4B2366B1-B341-4539-B25E-4BFF8D5F7899}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{4B2366B1-B341-4539-B25E-4BFF8D5F7899}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{4B2366B1-B341-4539-B25E-4BFF8D5F7899}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4B2366B1-B341-4539-B25E-4BFF8D5F7899}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4B2366B1-B341-4539-B25E-4BFF8D5F7899}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{4B2366B1-B341-4539-B25E-4BFF8D5F7899}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{4B2366B1-B341-4539-B25E-4BFF8D5F7899}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{93F48884-D915-4764-BBED-97F4ACA13F58} = {D32CC044-DC1F-4FD5-BFFE-5A09AD83DD52}
-		{30201ABA-1B2C-4A41-99B0-688314F965CB} = {D32CC044-DC1F-4FD5-BFFE-5A09AD83DD52}
 		{40B9CFFA-C077-45B3-A97F-937DEA4BDA77} = {D32CC044-DC1F-4FD5-BFFE-5A09AD83DD52}
+		{BF06C7FE-A492-4F61-9179-F2CCCECE458E} = {D32CC044-DC1F-4FD5-BFFE-5A09AD83DD52}
 		{7001C3E1-CC94-42AC-837B-9AB0A278391E} = {4FFDD784-6433-46EF-98C3-9CCB693C4BE4}
 		{2A9B1617-6E29-4755-9EBB-66501830B918} = {B3FA2132-074F-4590-A45B-FC99DAF00223}
 		{946335FD-A98D-40C3-828C-28E033C846F5} = {2BBCF089-3F2C-4CDE-A19F-83F45AECCC00}
@@ -152,5 +173,7 @@ Global
 		{4B0B5DD2-3E62-4BA7-B18F-A45FBBDC3A4F} = {2BBCF089-3F2C-4CDE-A19F-83F45AECCC00}
 		{DF5D7133-67A1-4065-97FC-439FE14127A8} = {2BBCF089-3F2C-4CDE-A19F-83F45AECCC00}
 		{C03E1AA5-4A75-46F3-846C-5A4298691260} = {9CB0910D-4658-4370-99BD-C33A131EC5D1}
+		{4B2366B1-B341-4539-B25E-4BFF8D5F7899} = {9CB0910D-4658-4370-99BD-C33A131EC5D1}
+		{4DC7B03D-E252-49C7-9783-E121091CFDAF} = {BF06C7FE-A492-4F61-9179-F2CCCECE458E}
 	EndGlobalSection
 EndGlobal
