@@ -9,3 +9,6 @@ http://www.chrissurfleet.co.uk/post/2011/07/06/iis-integration-with-wix.aspx
 
 How to: Host a WCF Service in a Managed Windows Service
 http://msdn.microsoft.com/en-us/library/ms733069.aspx
+
+Introduction to Remote Authentication in SharePoint Online Using Claims-Based Authentication
+http://msdn.microsoft.com/en-us/library/hh147177(v=office.14).aspx

@@ -43,6 +43,10 @@
     <Compile Include="SharePointFtpService.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\01 Core\Core.SharePointLibrary\Core.SharePointLibrary.csproj">
+      <Project>{7001c3e1-cc94-42ac-837b-9ab0a278391e}</Project>
+      <Name>Core.SharePointLibrary</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Server.DataContracts\Server.DataContracts.csproj">
       <Project>{4b0b5dd2-3e62-4ba7-b18f-a45fbbdc3a4f}</Project>
       <Name>Server.DataContracts</Name>
