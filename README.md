@@ -18,3 +18,5 @@ Current status as of 2013.04.03:
 - instaler for windows service working and services responding (not still wired to SB);
 - service/data contracts still in early draft forms;
 - sharepoint library started, still in early tests
+
+See the wiki and issue list for more information.
