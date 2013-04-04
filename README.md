@@ -9,9 +9,7 @@ There will be a command line tool to run on the client to run the common ftp com
 
 The developments will support authentication and secure transfer of contents. Authentication will be done directly against SharePoint's permission model.
 
-Code will be developed in .Net 4.5 and x64.
-
-The base code structure and architecture document will be posted in the next few days.[2013.04.03]
+Code is developed in .Net 4.5/x64.
 
 Current status as of 2013.04.03:
 - created all the placeholder projects for the server-side;
