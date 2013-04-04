@@ -46,6 +46,8 @@
     </WixExtension>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="License.rtf" />
+    <Content Include="SetupLogo.bmp" />
     <Content Include="XslTransform.xslt" />
   </ItemGroup>
   <Import Project="$(WixTargetsPath)" />

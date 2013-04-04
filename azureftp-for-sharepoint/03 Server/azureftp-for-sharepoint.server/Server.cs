@@ -11,9 +11,15 @@
     using System.ServiceProcess;
     using System.Text;
     using AzureFtpForSharePoint.Server.Implementation;
+    using log4net;
 
     public partial class Server : ServiceBase
     {
+        /// <summary>
+        /// Create a logger for use in this class 
+        /// </summary>
+        private static readonly ILog _logger = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+
         /// <summary>
         /// Server service constructor
         /// </summary>
@@ -44,7 +50,8 @@
             // Open the ServiceHostBase to create listeners and start listening for messages.
             ServiceHost.Open();
 
-            File.AppendAllText(@"c:\azureftpforsharepoint\log.server.log", string.Format("{0} Server Started", DateTime.Now.ToShortTimeString()));
+            _logger.Info("Server has started and the services are listening for requests");
+            //File.AppendAllText(@"c:\azureftpforsharepoint\log.server.log", string.Format("{0} Server Started", DateTime.Now.ToShortTimeString()));
         }
 
         /// <summary>
@@ -58,7 +65,8 @@
                 ServiceHost = null;
             }
 
-            File.AppendAllText(@"c:\azureftpforsharepoint\log.server.log", string.Format("{0} Server Stopped", DateTime.Now.ToShortTimeString()));
+            //File.AppendAllText(@"c:\azureftpforsharepoint\log.server.log", string.Format("{0} Server Stopped", DateTime.Now.ToShortTimeString()));
+            _logger.Info("Server has shutdown");        
         }
     }
 }

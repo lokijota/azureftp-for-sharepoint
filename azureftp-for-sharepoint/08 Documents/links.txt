@@ -12,3 +12,9 @@ http://msdn.microsoft.com/en-us/library/ms733069.aspx
 
 Introduction to Remote Authentication in SharePoint Online Using Claims-Based Authentication
 http://msdn.microsoft.com/en-us/library/hh147177(v=office.14).aspx
+
+WIX - How To: Set Your Installer's Icon in Add/Remove Programs	
+http://wix.sourceforge.net/manual-wix3/configure_arp_appearance.htm
+
+Windows Installer XML (WiX): Adding a User Interface
+http://www.packtpub.com/article/windows-installer-xml-wix-adding-user-interface

@@ -10,22 +10,24 @@
 		<MediaTemplate />
 
     <Directory Id="TARGETDIR" Name="SourceDir">
-      <Directory Id="INSTALLLOCATION" Name="AzureFtpForSharePoint">
-        <Component Id="ServiceComponent" Guid="56fad090-04d0-4295-00d7-c043f8c23fa0">
-          <CreateFolder />
-          <File Id="MainExecutable" KeyPath="yes" Source="$(var.BasePath)\azureftp-for-sharepoint.server.exe" />
-          <ServiceInstall Id="ServiceInstaller"
-            Type="ownProcess"
-            Vital="yes"
-            Name="AzureFtpForSharePointServer"
-            DisplayName="AzureFTP for SharePoint Server"
-            Description="Server for SharePoint contents and structure queries"
-            Start="auto"
-            Account="LocalSystem"
-            ErrorControl="ignore"
-            Interactive="no" />
-          <ServiceControl Id="StartService" Start="install" Stop="both" Remove="uninstall" Name="AzureFtpForSharePointServer" Wait="yes" />
-        </Component>
+      <Directory Id="ProgramFilesFolder" Name="FooBar">
+        <Directory Id="INSTALLLOCATION" Name="AzureFtpForSharePoint">
+          <Component Id="ServiceComponent" Guid="56fad090-04d0-4295-00d7-c043f8c23fa0">
+            <CreateFolder />
+            <File Id="MainExecutable" KeyPath="yes" Source="$(var.BasePath)\azureftp-for-sharepoint.server.exe" />
+            <ServiceInstall Id="ServiceInstaller"
+              Type="ownProcess"
+              Vital="yes"
+              Name="AzureFtpForSharePointServer"
+              DisplayName="AzureFTP for SharePoint Server"
+              Description="Server for SharePoint contents and structure queries"
+              Start="auto"
+              Account="LocalSystem"
+              ErrorControl="ignore"
+              Interactive="no" />
+            <ServiceControl Id="StartService" Start="install" Stop="both" Remove="uninstall" Name="AzureFtpForSharePointServer" Wait="yes" />
+          </Component>
+        </Directory>
       </Directory>
     </Directory>
 
@@ -36,8 +38,12 @@
 
     <Property Id="WIXUI_INSTALLDIR">INSTALLLOCATION</Property>
     <UIRef Id="WixUI_InstallDir" />
-    
-		<!--<Feature Id="ProductFeature" Title="SetupAzureFtpForSharePoint" Level="1">
+
+
+    <WixVariable Id="WixUILicenseRtf" Value="License.rtf" />
+    <WixVariable Id="WixUIDialogBmp" Value="SetupLogo.bmp"/> <!--location of 493x312 picture-->
+
+    <!--<Feature Id="ProductFeature" Title="SetupAzureFtpForSharePoint" Level="1">
 			<ComponentGroupRef Id="ProductComponents" />
 		</Feature>-->
 	</Product>
