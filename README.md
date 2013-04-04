@@ -11,10 +11,11 @@ The developments will support authentication and secure transfer of contents. Au
 
 Code is developed in .Net 4.5/x64.
 
-Current status as of 2013.04.03:
+Current status as of 2013.04.04:
 - created all the placeholder projects for the server-side;
-- instaler for windows service working and services responding (not still wired to SB);
+- instaler for windows service working and ui tunned and services responding (not still wired to SB);
 - service/data contracts still in early draft forms;
 - sharepoint library started, still in early tests
+- logging with log4net configured
 
 See the wiki and issue list for more information.
