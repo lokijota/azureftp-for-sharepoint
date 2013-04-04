@@ -41,5 +41,6 @@
 
     <WixVariable Id="WixUILicenseRtf" Value="License.rtf" />
     <WixVariable Id="WixUIDialogBmp" Value="SetupLogo.bmp"/> <!--location of 493x312 picture-->
+    <WixVariable Id="WixUIBannerBmp" Value="SetupBanner.bmp"/> <!--493x58 picture-->
 	</Product>
 </Wix>
