@@ -39,29 +39,7 @@
     <Property Id="WIXUI_INSTALLDIR">INSTALLLOCATION</Property>
     <UIRef Id="WixUI_InstallDir" />
 
-
     <WixVariable Id="WixUILicenseRtf" Value="License.rtf" />
     <WixVariable Id="WixUIDialogBmp" Value="SetupLogo.bmp"/> <!--location of 493x312 picture-->
-
-    <!--<Feature Id="ProductFeature" Title="SetupAzureFtpForSharePoint" Level="1">
-			<ComponentGroupRef Id="ProductComponents" />
-		</Feature>-->
 	</Product>
-
-	<!--<Fragment>
-		<Directory Id="TARGETDIR" Name="SourceDir">
-			<Directory Id="ProgramFilesFolder">
-				<Directory Id="INSTALLFOLDER" Name="SetupAzureFtpForSharePoint" />
-			</Directory>
-		</Directory>
-	</Fragment>
-
-	<Fragment>
-		<ComponentGroup Id="ProductComponents" Directory="INSTALLFOLDER">
-			--><!-- TODO: Remove the comments around this Component element and the ComponentRef below in order to add resources to this installer. --><!--
-			--><!-- <Component Id="ProductComponent"> --><!--
-				--><!-- TODO: Insert files, registry keys, and other resources here. --><!--
-			--><!-- </Component> --><!--
-		</ComponentGroup>
-	</Fragment>-->
 </Wix>

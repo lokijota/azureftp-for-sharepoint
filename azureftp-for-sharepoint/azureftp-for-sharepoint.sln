@@ -57,6 +57,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "bin", "bin", "{4DC7B03D-E25
 		09 Dependencies\Irony\bin\Irony.Interpreter.dll = 09 Dependencies\Irony\bin\Irony.Interpreter.dll
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "log4net-1.2.11", "log4net-1.2.11", "{2E7B53DE-23DD-45DD-A5C7-757BC40FB6CD}"
+	ProjectSection(SolutionItems) = preProject
+		09 Dependencies\log4net-1.2.11\log4net.dll = 09 Dependencies\log4net-1.2.11\log4net.dll
+		09 Dependencies\log4net-1.2.11\log4net.xml = 09 Dependencies\log4net-1.2.11\log4net.xml
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -165,6 +171,7 @@ Global
 		{93F48884-D915-4764-BBED-97F4ACA13F58} = {D32CC044-DC1F-4FD5-BFFE-5A09AD83DD52}
 		{40B9CFFA-C077-45B3-A97F-937DEA4BDA77} = {D32CC044-DC1F-4FD5-BFFE-5A09AD83DD52}
 		{BF06C7FE-A492-4F61-9179-F2CCCECE458E} = {D32CC044-DC1F-4FD5-BFFE-5A09AD83DD52}
+		{2E7B53DE-23DD-45DD-A5C7-757BC40FB6CD} = {D32CC044-DC1F-4FD5-BFFE-5A09AD83DD52}
 		{7001C3E1-CC94-42AC-837B-9AB0A278391E} = {4FFDD784-6433-46EF-98C3-9CCB693C4BE4}
 		{2A9B1617-6E29-4755-9EBB-66501830B918} = {B3FA2132-074F-4590-A45B-FC99DAF00223}
 		{946335FD-A98D-40C3-828C-28E033C846F5} = {2BBCF089-3F2C-4CDE-A19F-83F45AECCC00}

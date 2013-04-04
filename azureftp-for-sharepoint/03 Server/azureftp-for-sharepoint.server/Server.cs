@@ -51,7 +51,6 @@
             ServiceHost.Open();
 
             _logger.Info("Server has started and the services are listening for requests");
-            //File.AppendAllText(@"c:\azureftpforsharepoint\log.server.log", string.Format("{0} Server Started", DateTime.Now.ToShortTimeString()));
         }
 
         /// <summary>
@@ -65,8 +64,7 @@
                 ServiceHost = null;
             }
 
-            //File.AppendAllText(@"c:\azureftpforsharepoint\log.server.log", string.Format("{0} Server Stopped", DateTime.Now.ToShortTimeString()));
-            _logger.Info("Server has shutdown");        
+            _logger.Info("Server has shutdown");
         }
     }
 }
