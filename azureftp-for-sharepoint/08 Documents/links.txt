@@ -2,5 +2,10 @@ Install Windows Services with WIX
 http://www.chrissurfleet.co.uk/post/2011/08/04/Creating-windows-service-installer-with-Visual-Studio-and-WiX.aspx
 http://blog.tentaclesoftware.com/archive/2009/01/01/21.aspx
 
+More relevant links regarding WIX
+http://www.chrissurfleet.co.uk/post/2011/06/30/simplify-deployment-with-visual-studio-and-wix.aspx
+http://www.chrissurfleet.co.uk/post/2011/08/05/Setting-up-WiX-Install-Conditions.aspx
+http://www.chrissurfleet.co.uk/post/2011/07/06/iis-integration-with-wix.aspx
+
 How to: Host a WCF Service in a Managed Windows Service
 http://msdn.microsoft.com/en-us/library/ms733069.aspx

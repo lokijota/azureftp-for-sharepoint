@@ -3,6 +3,9 @@
 	<Product Id="*" Name="SetupAzureFtpForSharePoint" Language="1033" Version="1.0.0.0" Manufacturer="4GuysFromPalmira" UpgradeCode="56fad890-84d8-4295-89d7-c043f8c23fa1">
 		<Package InstallerVersion="200" Compressed="yes" InstallScope="perMachine" />
 
+    <PropertyRef Id="NETFRAMEWORK45"/>
+    <Condition Message="This application requires .net version 4.5 or higher.">Installed OR NETFRAMEWORK45</Condition>
+
 		<MajorUpgrade DowngradeErrorMessage="A newer version of [ProductName] is already installed." />
 		<MediaTemplate />
 
