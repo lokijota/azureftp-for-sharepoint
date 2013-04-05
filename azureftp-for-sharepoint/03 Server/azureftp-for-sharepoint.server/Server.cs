@@ -18,14 +18,14 @@
         /// <summary>
         /// Create a logger for use in this class 
         /// </summary>
-        private static readonly ILog _logger = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+        private static readonly ILog Logger = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
         /// <summary>
         /// Server service constructor
         /// </summary>
         public Server()
         {
-            InitializeComponent();
+            this.InitializeComponent();
         }
 
         /// <summary>
@@ -50,7 +50,7 @@
             // Open the ServiceHostBase to create listeners and start listening for messages.
             ServiceHost.Open();
 
-            _logger.Info("Server has started and the services are listening for requests");
+            Logger.Info("Server has started and the services are listening for requests");
         }
 
         /// <summary>
@@ -64,7 +64,7 @@
                 ServiceHost = null;
             }
 
-            _logger.Info("Server has shutdown");
+            Logger.Info("Server has shutdown");
         }
     }
 }

@@ -7,8 +7,8 @@
     <ProjectGuid>{4B2366B1-B341-4539-B25E-4BFF8D5F7899}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Spike.Irony</RootNamespace>
-    <AssemblyName>Spike.Irony</AssemblyName>
+    <RootNamespace>Spike.IronyFtpCommandParser</RootNamespace>
+    <AssemblyName>Spike.IronyFtpCommandParser</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />

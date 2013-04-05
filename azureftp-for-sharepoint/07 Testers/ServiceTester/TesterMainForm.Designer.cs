@@ -2,10 +2,32 @@
 {
     partial class TesterMainForm
     {
+        private System.Windows.Forms.Button button1;
+
+        private System.Windows.Forms.Button button2;
+
         /// <summary>
         /// Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
+
+        private System.Windows.Forms.GroupBox groupBox1;
+
+        private System.Windows.Forms.GroupBox groupBox2;
+
+        private System.Windows.Forms.Label label1;
+
+        private System.Windows.Forms.Label label2;
+
+        private System.Windows.Forms.Label label3;
+
+        private System.Windows.Forms.TextBox textOutput;
+
+        private System.Windows.Forms.TextBox textPassword;
+
+        private System.Windows.Forms.TextBox textUrl;
+
+        private System.Windows.Forms.TextBox textUser;
 
         /// <summary>
         /// Clean up any resources being used.
@@ -17,6 +39,7 @@
             {
                 components.Dispose();
             }
+
             base.Dispose(disposing);
         }
 
@@ -167,18 +190,5 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textPassword;
-        private System.Windows.Forms.TextBox textUser;
-        private System.Windows.Forms.TextBox textUrl;
-        private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textOutput;
     }
 }
-

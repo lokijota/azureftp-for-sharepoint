@@ -2,10 +2,14 @@
 {
     partial class ProjectInstaller
     {
+        private System.ServiceProcess.ServiceInstaller _azureFtpForSharePointServer;
+
         /// <summary>
         /// Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
+
+        private System.ServiceProcess.ServiceProcessInstaller serviceProcessInstaller1;
 
         /// <summary> 
         /// Clean up any resources being used.
@@ -17,6 +21,7 @@
             {
                 components.Dispose();
             }
+
             base.Dispose(disposing);
         }
 
@@ -29,7 +34,7 @@
         private void InitializeComponent()
         {
             this.serviceProcessInstaller1 = new System.ServiceProcess.ServiceProcessInstaller();
-            this.AzureFtpForSharePointServer = new System.ServiceProcess.ServiceInstaller();
+            this._azureFtpForSharePointServer = new System.ServiceProcess.ServiceInstaller();
             // 
             // serviceProcessInstaller1
             // 
@@ -39,22 +44,19 @@
             // 
             // AzureFtpForSharePointServer
             // 
-            this.AzureFtpForSharePointServer.DisplayName = "Azure-Ftp-For-SharePoint Server";
-            this.AzureFtpForSharePointServer.ServiceName = "AzureFtpForSharePointServer";
-            this.AzureFtpForSharePointServer.StartType = System.ServiceProcess.ServiceStartMode.Automatic;
-            this.AzureFtpForSharePointServer.AfterInstall += new System.Configuration.Install.InstallEventHandler(this.serviceInstaller1_AfterInstall);
+            this._azureFtpForSharePointServer.DisplayName = "Azure-Ftp-For-SharePoint Server";
+            this._azureFtpForSharePointServer.ServiceName = "AzureFtpForSharePointServer";
+            this._azureFtpForSharePointServer.StartType = System.ServiceProcess.ServiceStartMode.Automatic;
+            this._azureFtpForSharePointServer.AfterInstall += new System.Configuration.Install.InstallEventHandler(this.serviceInstaller1_AfterInstall);
             // 
             // ProjectInstaller
             // 
             this.Installers.AddRange(new System.Configuration.Install.Installer[] {
             this.serviceProcessInstaller1,
-            this.AzureFtpForSharePointServer});
+            this._azureFtpForSharePointServer});
 
         }
 
         #endregion
-
-        private System.ServiceProcess.ServiceProcessInstaller serviceProcessInstaller1;
-        private System.ServiceProcess.ServiceInstaller AzureFtpForSharePointServer;
     }
 }

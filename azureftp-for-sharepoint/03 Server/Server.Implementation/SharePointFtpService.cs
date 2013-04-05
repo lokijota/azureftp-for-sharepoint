@@ -1,11 +1,11 @@
 ﻿namespace AzureFtpForSharePoint.Server.Implementation
 {
-    using AzureFtpForSharePoint.Core.SharePointLibrary;
-    using AzureFtpForSharePoint.Server.ServiceContracts;
     using System;
     using System.Collections.Generic;
     using System.Linq;
     using System.Text;
+    using AzureFtpForSharePoint.Core.SharePointLibrary;
+    using AzureFtpForSharePoint.Server.ServiceContracts;
 
     /// <summary>
     /// Implementation of the SharePoint FTP Service
@@ -30,7 +30,7 @@
 
         public bool Open(string url, string username, string password)
         {
-            SharePointManager manager = new SharePointManager();
+            SharePointManager2013 manager = new SharePointManager2013();
             return manager.Open(url, username, password);
         }
     }

@@ -1,27 +1,27 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Irony;
-using Irony.Interpreter;
-using Irony.Parsing;
-
-namespace Spike.Irony
+﻿namespace Spike.IronyFtpCommandParser
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Text;
+    using System.Threading.Tasks;
+    using Irony;
+    using Irony.Interpreter;
+    using Irony.Parsing;
+
     [Language("AZFTP", "1.0", "Azure Ftp For SharePoint Language")]
     public class FtpGrammar : Grammar
     {
         /// <summary>
-        /// Class constructor and grmamar definition
+        /// Class constructor and grammar definition
         /// </summary>
         public FtpGrammar() : base(false)
         {
             // declare keywords
             var openKeyword = ToTerm("open");
-            var cdKeyword = ToTerm("cd");
+            var changeDirKeyword = ToTerm("cd");
             var dirKeyword = ToTerm("dir");
-            var lsKeyword = ToTerm("ls");
+            var listKeyword = ToTerm("ls");
             var closeKeyword = ToTerm("close");
             var getKeyword = ToTerm("get");
             var byeKeyword = ToTerm("bye");
@@ -33,7 +33,7 @@ namespace Spike.Irony
             var commandList = new NonTerminal("commandList");
             var command = new NonTerminal("command");
             var openCommand = new NonTerminal("open");
-            var cdCommand = new NonTerminal("cd");
+            var changeDirCommand = new NonTerminal("cd");
             var dirCommand = new NonTerminal("dir");
             var closeCommand = new NonTerminal("close");
             var getCommand = new NonTerminal("get");
@@ -49,25 +49,25 @@ namespace Spike.Irony
 
             // grammar rules
             program.Rule = commandList;
-            commandList.Rule = MakePlusRule(commandList, null, command);
-            command.Rule = openCommand | cdCommand | dirCommand | closeCommand | getCommand | byeCommand;
+            commandList.Rule = this.MakePlusRule(commandList, null, command);
+            command.Rule = openCommand | changeDirCommand | dirCommand | closeCommand | getCommand | byeCommand;
 
-            openCommand.Rule = openKeyword + url + NewLine; // string_literal + string_literal +
-            cdCommand.Rule =  cdKeyword + rootfolderKeyword + NewLine | cdKeyword + backfolderKeyword + NewLine | cdKeyword + folderName + NewLine;
-            dirCommand.Rule = (dirKeyword | lsKeyword) + NewLine;
-            closeCommand.Rule = closeKeyword + NewLine;
-            getCommand.Rule = getKeyword + unquotedIdentifier + NewLine; // vai ser preciso usar uma regex para o nome do ficheiro
-            byeCommand.Rule = byeKeyword + NewLine;
+            openCommand.Rule = openKeyword + url + this.NewLine; // string_literal + string_literal +
+            changeDirCommand.Rule = changeDirKeyword + rootfolderKeyword + this.NewLine | changeDirKeyword + backfolderKeyword + this.NewLine | changeDirKeyword + folderName + this.NewLine;
+            dirCommand.Rule = (dirKeyword | listKeyword) + this.NewLine;
+            closeCommand.Rule = closeKeyword + this.NewLine;
+            getCommand.Rule = getKeyword + unquotedIdentifier + this.NewLine; // vai ser preciso usar uma regex para o nome do ficheiro
+            byeCommand.Rule = byeKeyword + this.NewLine;
 
-            // string regex = @"^[a-zA-Z0-9\.-_ ]+$" (cuidado com ., .., ...) e os espaços
-            // inválidos: \/:*?"<>|
+            //// string regex = @"^[a-zA-Z0-9\.-_ ]+$" (cuidado com ., .., ...) e os espaços
+            //// inválidos: \/:*?"<>|
 
             url.Rule = quotedUrl | unquotedUrl;
             folderName.Rule = quotedIdentifier | filename; 
 
             // remove these notes as children in the AST
-            MarkPunctuation("open", "dir", "ls", "close", "get", "cd", "bye");
-            Root = program;
+            this.MarkPunctuation("open", "dir", "ls", "close", "get", "cd", "bye");
+            this.Root = program;
 
             // LanguageFlags |= LanguageFlags.CreateAst;
         }

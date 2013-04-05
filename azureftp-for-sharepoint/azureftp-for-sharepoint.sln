@@ -44,8 +44,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core.SharePointLibrary", "0
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceTester", "07 Testers\ServiceTester\ServiceTester.csproj", "{C03E1AA5-4A75-46F3-846C-5A4298691260}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spike.Irony", "07 Testers\ServiceTester\Spike.Irony\Spike.Irony.csproj", "{4B2366B1-B341-4539-B25E-4BFF8D5F7899}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Irony", "Irony", "{BF06C7FE-A492-4F61-9179-F2CCCECE458E}"
 	ProjectSection(SolutionItems) = preProject
 		09 Dependencies\Irony\Irony_2013_03_10.zip = 09 Dependencies\Irony\Irony_2013_03_10.zip
@@ -62,6 +60,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "log4net-1.2.11", "log4net-1
 		09 Dependencies\log4net-1.2.11\log4net.dll = 09 Dependencies\log4net-1.2.11\log4net.dll
 		09 Dependencies\log4net-1.2.11\log4net.xml = 09 Dependencies\log4net-1.2.11\log4net.xml
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spike.Irony", "07 Testers\Spike.Irony\Spike.Irony.csproj", "{4B2366B1-B341-4539-B25E-4BFF8D5F7899}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
