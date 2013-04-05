@@ -22,6 +22,18 @@ namespace Spike.Irony
             var commandLine = new CommandLine(runtime);
             commandLine.Prompt = "AZFTP>";
             commandLine.Run();
+
+//This is the latest equivalent:
+ 
+//MyGrammar grammar = new MyGrammar();
+//ScriptInterpreter interpreter = new ScriptInterpreter(grammar);
+//Parser parser = new Parser(grammar);
+ 
+//ParseTree tree = interpreter.Parser.Parse("if (true) { }");
+ 
+//Also make sure the constructor for your grammar contains:
+ 
+//this.LanguageFlags |= LanguageFlags.CreateAst;
         }
     }
 }
