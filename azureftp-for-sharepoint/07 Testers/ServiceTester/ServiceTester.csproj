@@ -95,6 +95,15 @@
     <None Include="Service References\SharePointFtpService\service2.xsd">
       <SubType>Designer</SubType>
     </None>
+    <None Include="Service References\SharePointFtpService\service3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SharePointFtpService\ServiceTester.SharePointFtpService.CloseResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SharePointFtpService\ServiceTester.SharePointFtpService.OpenResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
     <None Include="Service References\SharePointFtpService\SharePointFtpService.wsdl" />
   </ItemGroup>
   <ItemGroup>

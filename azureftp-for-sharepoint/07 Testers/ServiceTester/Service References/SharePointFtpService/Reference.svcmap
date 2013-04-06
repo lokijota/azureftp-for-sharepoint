@@ -26,6 +26,7 @@
     <MetadataFile FileName="service1.xsd" MetadataType="Schema" ID="395418ea-98cb-47aa-99bc-5ce219943a76" SourceId="1" SourceUrl="http://localhost:1972/SharePointFtpService/service?xsd=xsd0" />
     <MetadataFile FileName="service2.xsd" MetadataType="Schema" ID="aee1dd86-e494-45d3-82f3-976385a5d625" SourceId="1" SourceUrl="http://localhost:1972/SharePointFtpService/service?xsd=xsd2" />
     <MetadataFile FileName="service.wsdl" MetadataType="Wsdl" ID="f2a1ca71-0166-488f-8cdc-44ca4fd7ba57" SourceId="1" SourceUrl="http://localhost:1972/SharePointFtpService/service?wsdl=wsdl0" />
+    <MetadataFile FileName="service3.xsd" MetadataType="Schema" ID="0e12b871-fc6b-4940-adde-e4174731c317" SourceId="1" SourceUrl="http://localhost:1972/SharePointFtpService/service?xsd=xsd3" />
     <MetadataFile FileName="service.disco" MetadataType="Disco" ID="f00f2c51-dc40-468f-a858-4bdc913a42cf" SourceId="1" SourceUrl="http://localhost:1972/SharePointFtpService/service?disco" />
   </Metadata>
   <Extensions>

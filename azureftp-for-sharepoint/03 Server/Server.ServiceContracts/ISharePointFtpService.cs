@@ -1,5 +1,6 @@
 ﻿namespace AzureFtpForSharePoint.Server.ServiceContracts
 {
+    using AzureFtpForSharePoint.Server.DataContracts;
     using System.ServiceModel;
     
     /// <summary>
@@ -10,7 +11,10 @@
     public interface ISharePointFtpService
     {
         [OperationContract]
-        bool Open(string url, string username, string password);
+        OpenResponse Open(string url, string username, string password);
+
+        [OperationContract]
+        CloseResponse Close(string sessionId);
 
         [OperationContract]
         string[] List(string currentFolder);

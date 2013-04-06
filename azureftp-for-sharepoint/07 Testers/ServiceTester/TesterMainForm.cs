@@ -1,5 +1,6 @@
 ﻿namespace ServiceTester
 {
+    using ServiceTester.SharePointFtpService;
     using System;
     using System.Collections.Generic;
     using System.ComponentModel;
@@ -22,9 +23,9 @@
 
             try
             {
-                bool result = client.Open(textUrl.Text, textUser.Text, textPassword.Text);
+                OpenResponse result = client.Open(textUrl.Text, textUser.Text, textPassword.Text);
 
-                textOutput.Text += "Result of call is: " + result.ToString();
+                textOutput.Text += string.Format("Status: [{0}] {1}. Session ID: {2}\n", result.StatusCode, result.StatusMessage, result.SessionId);
             }
             finally
             {
