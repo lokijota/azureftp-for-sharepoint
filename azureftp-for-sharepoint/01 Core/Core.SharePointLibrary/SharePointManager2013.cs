@@ -19,6 +19,11 @@ using SP = Microsoft.SharePoint.Client;
         private static readonly ILog Logger = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
         /// <summary>
+        /// Caracter used for a root folder URL.
+        /// </summary>
+        private const string ROOT_FOLDER_URL = "/";
+
+        /// <summary>
         /// Username used for SharePoint access.
         /// </summary>
         private string Username { get; set; }
@@ -105,8 +110,13 @@ using SP = Microsoft.SharePoint.Client;
                 string[] uriSegments = folderUri.Segments;
 
                 // compare the folder URL with the web URL. If they're the same, then there is no folder with that URL
-                if (Uri.Compare(folderUri, new Uri(webUrl), UriComponents.AbsoluteUri, UriFormat.SafeUnescaped, StringComparison.InvariantCultureIgnoreCase) == 0 ||
-                    uriSegments.Length == 1)
+                if (Uri.Compare(folderUri, new Uri(webUrl), UriComponents.AbsoluteUri, UriFormat.SafeUnescaped, StringComparison.InvariantCultureIgnoreCase) == 0)
+                {
+                    return ROOT_FOLDER_URL;
+                }
+
+                // if there are no more segments to remove, the folder URL was not found
+                if (uriSegments.Length == 1)
                 {
                     return null;
                 }
