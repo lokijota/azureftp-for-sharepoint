@@ -30,9 +30,9 @@
         internal string WebUrl { get; set; }
 
         /// <summary>
-        /// Gets or sets the current list name, for context.
+        /// Gets or sets the current folder URL, for context.
         /// </summary>
-        /// <value>Current list name.</value>
-        internal string ListName { get; set; }
+        /// <value>Current folder URL.</value>
+        internal string FolderUrl { get; set; }
     }
 }

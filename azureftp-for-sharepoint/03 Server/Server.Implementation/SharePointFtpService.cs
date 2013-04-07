@@ -46,15 +46,20 @@
             try
             {
                 SharePointManager2013 manager = new SharePointManager2013(username, password);
-                if (manager.IsWeb(url))
+
+                string webUrl = manager.GetWebUrl(url);
+                if (!string.IsNullOrEmpty(webUrl))
                 {
+                    string folderUrl = manager.GetFolderUrl(webUrl, url);
+
                     // generate new session data
                     Guid sessionId = Guid.NewGuid();
                     SessionData sessionData = new SessionData()
                     {
                         Username = username,
                         Password = password,
-                        WebUrl = url
+                        WebUrl = webUrl,
+                        FolderUrl = folderUrl
                     };
 
                     // store session data in dictionary
