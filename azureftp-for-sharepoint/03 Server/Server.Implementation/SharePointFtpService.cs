@@ -13,6 +13,7 @@
     using AzureFtpForSharePoint.Core.SharePointLibrary.Exceptions;
     using AzureFtpForSharePoint.Server.DataContracts.Faults;
     using System.ServiceModel;
+    using AzureFtpForSharePoint.Core.SharePointLibrary.Interfaces;
 
     /// <summary>
     /// Implementation of the SharePoint FTP Service
@@ -44,7 +45,7 @@
         {
             try
             {
-                SharePointManager2013 manager = new SharePointManager2013();
+                ISharePointManager manager = new SharePointManager2013();
                 CurrentContext currentContext = manager.Open(request.Url, request.Username, request.Password);
                 return OpenResponseMapper.MapFrom(currentContext);
             }
