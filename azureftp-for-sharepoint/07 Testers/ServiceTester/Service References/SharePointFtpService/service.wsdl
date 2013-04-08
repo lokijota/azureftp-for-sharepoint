@@ -3,9 +3,9 @@
   <wsdl:types>
     <xsd:schema targetNamespace="http://www.4guysfrompalmira.net/contracts/2013/04/04/Imports">
       <xsd:import schemaLocation="http://localhost:1972/SharePointFtpService/service?xsd=xsd0" namespace="http://www.4guysfrompalmira.net/contracts/2013/04/04" />
+      <xsd:import schemaLocation="http://localhost:1972/SharePointFtpService/service?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/AzureFtpForSharePoint.Server.DataContracts.Faults" />
       <xsd:import schemaLocation="http://localhost:1972/SharePointFtpService/service?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
-      <xsd:import schemaLocation="http://localhost:1972/SharePointFtpService/service?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/AzureFtpForSharePoint.Server.DataContracts" />
-      <xsd:import schemaLocation="http://localhost:1972/SharePointFtpService/service?xsd=xsd3" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <xsd:import schemaLocation="http://localhost:1972/SharePointFtpService/service?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/AzureFtpForSharePoint.Server.DataContracts.Parameters" />
     </xsd:schema>
   </wsdl:types>
   <wsdl:message name="ISharePointFtpService_Open_InputMessage">
@@ -14,11 +14,8 @@
   <wsdl:message name="ISharePointFtpService_Open_OutputMessage">
     <wsdl:part name="parameters" element="tns:OpenResponse" />
   </wsdl:message>
-  <wsdl:message name="ISharePointFtpService_Close_InputMessage">
-    <wsdl:part name="parameters" element="tns:Close" />
-  </wsdl:message>
-  <wsdl:message name="ISharePointFtpService_Close_OutputMessage">
-    <wsdl:part name="parameters" element="tns:CloseResponse" />
+  <wsdl:message name="ISharePointFtpService_Open_InvalidUrlFaultFault_FaultMessage">
+    <wsdl:part xmlns:q1="http://schemas.datacontract.org/2004/07/AzureFtpForSharePoint.Server.DataContracts.Faults" name="detail" element="q1:InvalidUrlFault" />
   </wsdl:message>
   <wsdl:message name="ISharePointFtpService_List_InputMessage">
     <wsdl:part name="parameters" element="tns:List" />
@@ -42,10 +39,7 @@
     <wsdl:operation name="Open">
       <wsdl:input wsaw:Action="http://www.4guysfrompalmira.net/contracts/2013/04/04/ISharePointFtpService/Open" message="tns:ISharePointFtpService_Open_InputMessage" />
       <wsdl:output wsaw:Action="http://www.4guysfrompalmira.net/contracts/2013/04/04/ISharePointFtpService/OpenResponse" message="tns:ISharePointFtpService_Open_OutputMessage" />
-    </wsdl:operation>
-    <wsdl:operation name="Close">
-      <wsdl:input wsaw:Action="http://www.4guysfrompalmira.net/contracts/2013/04/04/ISharePointFtpService/Close" message="tns:ISharePointFtpService_Close_InputMessage" />
-      <wsdl:output wsaw:Action="http://www.4guysfrompalmira.net/contracts/2013/04/04/ISharePointFtpService/CloseResponse" message="tns:ISharePointFtpService_Close_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.4guysfrompalmira.net/contracts/2013/04/04/ISharePointFtpService/OpenInvalidUrlFaultFault" name="InvalidUrlFaultFault" message="tns:ISharePointFtpService_Open_InvalidUrlFaultFault_FaultMessage" />
     </wsdl:operation>
     <wsdl:operation name="List">
       <wsdl:input wsaw:Action="http://www.4guysfrompalmira.net/contracts/2013/04/04/ISharePointFtpService/List" message="tns:ISharePointFtpService_List_InputMessage" />

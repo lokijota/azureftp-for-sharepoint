@@ -4,14 +4,13 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{DF5D7133-67A1-4065-97FC-439FE14127A8}</ProjectGuid>
+    <ProjectGuid>{D3A87929-583A-40DB-8B84-2C0C2BF6ECB5}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>AzureFtpForSharePoint.Server.Implementation</RootNamespace>
-    <AssemblyName>AzureFtpForSharePoint.Server.Implementation</AssemblyName>
+    <RootNamespace>AzureFtpForSharePoint.Server.Domain</RootNamespace>
+    <AssemblyName>AzureFtpForSharePoint.Server.Domain</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -21,7 +20,6 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -30,12 +28,10 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
-    <Reference Include="System.ServiceModel" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -43,23 +39,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Mappers\OpenResponseMapper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SharePointFtpService.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\01 Core\Core.SharePointLibrary\Core.SharePointLibrary.csproj">
-      <Project>{7001c3e1-cc94-42ac-837b-9ab0a278391e}</Project>
-      <Name>Core.SharePointLibrary</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Server.DataContracts\Server.DataContracts.csproj">
-      <Project>{4b0b5dd2-3e62-4ba7-b18f-a45fbbdc3a4f}</Project>
-      <Name>Server.DataContracts</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Server.ServiceContracts\Server.ServiceContracts.csproj">
-      <Project>{69d3e71b-e9f7-4e0c-98a1-d14b3111b45e}</Project>
-      <Name>Server.ServiceContracts</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

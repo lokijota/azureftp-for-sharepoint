@@ -1,4 +1,4 @@
-﻿namespace AzureFtpForSharePoint.Server.DataContracts
+﻿namespace AzureFtpForSharePoint.Server.DataContracts.Parameters
 {
     using System;
     using System.Collections.Generic;
@@ -7,8 +7,7 @@
     using System.Text;
 
     [DataContract]
-    [KnownType(typeof(ServiceResponse))]
-    public class ListResponse : ServiceResponse
+    public class ListResponse
     {
     }
 }

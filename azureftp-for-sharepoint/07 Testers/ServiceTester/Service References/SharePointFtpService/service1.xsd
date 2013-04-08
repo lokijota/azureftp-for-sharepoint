@@ -1,76 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xs:schema xmlns:tns="http://www.4guysfrompalmira.net/contracts/2013/04/04" elementFormDefault="qualified" targetNamespace="http://www.4guysfrompalmira.net/contracts/2013/04/04" xmlns:xs="http://www.w3.org/2001/XMLSchema">
-  <xs:import schemaLocation="http://localhost:1972/SharePointFtpService/service?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/AzureFtpForSharePoint.Server.DataContracts" />
-  <xs:import schemaLocation="http://localhost:1972/SharePointFtpService/service?xsd=xsd3" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:import schemaLocation="http://localhost:1972/SharePointFtpService/service?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/AzureFtpForSharePoint.Server.DataContracts.Parameters" />
   <xs:element name="Open">
     <xs:complexType>
       <xs:sequence>
-        <xs:element minOccurs="0" name="url" nillable="true" type="xs:string" />
-        <xs:element minOccurs="0" name="username" nillable="true" type="xs:string" />
-        <xs:element minOccurs="0" name="password" nillable="true" type="xs:string" />
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/AzureFtpForSharePoint.Server.DataContracts.Parameters" minOccurs="0" name="request" nillable="true" type="q1:OpenRequest" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
   <xs:element name="OpenResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/AzureFtpForSharePoint.Server.DataContracts" minOccurs="0" name="OpenResult" nillable="true" type="q1:OpenResponse" />
-      </xs:sequence>
-    </xs:complexType>
-  </xs:element>
-  <xs:element name="Close">
-    <xs:complexType>
-      <xs:sequence>
-        <xs:element minOccurs="0" name="sessionId" nillable="true" type="xs:string" />
-      </xs:sequence>
-    </xs:complexType>
-  </xs:element>
-  <xs:element name="CloseResponse">
-    <xs:complexType>
-      <xs:sequence>
-        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/AzureFtpForSharePoint.Server.DataContracts" minOccurs="0" name="CloseResult" nillable="true" type="q2:CloseResponse" />
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/AzureFtpForSharePoint.Server.DataContracts.Parameters" minOccurs="0" name="OpenResult" nillable="true" type="q2:OpenResponse" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
   <xs:element name="List">
     <xs:complexType>
       <xs:sequence>
-        <xs:element minOccurs="0" name="currentFolder" nillable="true" type="xs:string" />
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/AzureFtpForSharePoint.Server.DataContracts.Parameters" minOccurs="0" name="request" nillable="true" type="q3:ListRequest" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
   <xs:element name="ListResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q3="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="ListResult" nillable="true" type="q3:ArrayOfstring" />
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/AzureFtpForSharePoint.Server.DataContracts.Parameters" minOccurs="0" name="ListResult" nillable="true" type="q4:ListResponse" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
   <xs:element name="ChangeDirectory">
     <xs:complexType>
       <xs:sequence>
-        <xs:element minOccurs="0" name="path" nillable="true" type="xs:string" />
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/AzureFtpForSharePoint.Server.DataContracts.Parameters" minOccurs="0" name="request" nillable="true" type="q5:ChangeDirectoryRequest" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
   <xs:element name="ChangeDirectoryResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element minOccurs="0" name="ChangeDirectoryResult" type="xs:boolean" />
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/AzureFtpForSharePoint.Server.DataContracts.Parameters" minOccurs="0" name="ChangeDirectoryResult" nillable="true" type="q6:ChangeDirectoryResponse" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
   <xs:element name="Get">
     <xs:complexType>
       <xs:sequence>
-        <xs:element minOccurs="0" name="file" nillable="true" type="xs:string" />
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/AzureFtpForSharePoint.Server.DataContracts.Parameters" minOccurs="0" name="request" nillable="true" type="q7:GetRequest" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
   <xs:element name="GetResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element minOccurs="0" name="GetResult" nillable="true" type="xs:base64Binary" />
+        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/AzureFtpForSharePoint.Server.DataContracts.Parameters" minOccurs="0" name="GetResult" nillable="true" type="q8:GetResponse" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>

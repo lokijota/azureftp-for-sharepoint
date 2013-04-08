@@ -1,6 +1,8 @@
 ﻿namespace AzureFtpForSharePoint.Server.ServiceContracts
 {
     using AzureFtpForSharePoint.Server.DataContracts;
+    using AzureFtpForSharePoint.Server.DataContracts.Faults;
+    using AzureFtpForSharePoint.Server.DataContracts.Parameters;
     using System.ServiceModel;
     
     /// <summary>
@@ -11,18 +13,16 @@
     public interface ISharePointFtpService
     {
         [OperationContract]
-        OpenResponse Open(string url, string username, string password);
+        [FaultContract(typeof(InvalidUrlFault))]
+        OpenResponse Open(OpenRequest request);
 
         [OperationContract]
-        CloseResponse Close(string sessionId);
+        ListResponse List(ListRequest request);
 
         [OperationContract]
-        string[] List(string currentFolder);
+        ChangeDirectoryResponse ChangeDirectory(ChangeDirectoryRequest request);
 
         [OperationContract]
-        bool ChangeDirectory(string path);
-
-        [OperationContract]
-        byte[] Get(string file);
+        GetResponse Get(GetRequest request);
     }
 }

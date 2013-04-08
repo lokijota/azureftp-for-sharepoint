@@ -7,6 +7,12 @@
     using AzureFtpForSharePoint.Core.SharePointLibrary;
     using AzureFtpForSharePoint.Server.ServiceContracts;
     using AzureFtpForSharePoint.Server.DataContracts;
+    using AzureFtpForSharePoint.Core.SharePointLibrary.DataObjects;
+    using AzureFtpForSharePoint.Server.Implementation.Mappers;
+    using AzureFtpForSharePoint.Server.DataContracts.Parameters;
+    using AzureFtpForSharePoint.Core.SharePointLibrary.Exceptions;
+    using AzureFtpForSharePoint.Server.DataContracts.Faults;
+    using System.ServiceModel;
 
     /// <summary>
     /// Implementation of the SharePoint FTP Service
@@ -14,22 +20,17 @@
     /// </summary>
     public class SharePointFtpService : ISharePointFtpService
     {
-        /// <summary>
-        /// Dictionary used to store session data.
-        /// </summary>
-        private static Dictionary<string, SessionData> _sessions = new Dictionary<string, SessionData>();
-
-        public bool ChangeDirectory(string path)
+        public ChangeDirectoryResponse ChangeDirectory(ChangeDirectoryRequest request)
         {
             throw new NotImplementedException();
         }
 
-        public byte[] Get(string file)
+        public GetResponse Get(GetRequest request)
         {
             throw new NotImplementedException();
         }
 
-        public string[] List(string currentFolder)
+        public ListResponse List(ListRequest request)
         {
             throw new NotImplementedException();
         }
@@ -37,94 +38,29 @@
         /// <summary>
         /// Opens a connection and sets up an FTP session.
         /// </summary>
-        /// <param name="url">Start URL.</param>
-        /// <param name="username">Username used for authentication.</param>
-        /// <param name="password">Password used for authentication.</param>
+        /// <param name="request">Request object.</param>
         /// <returns>Specific response object with operation status and session ID.</returns>
-        public OpenResponse Open(string url, string username, string password)
+        public OpenResponse Open(OpenRequest request)
         {
             try
             {
-                SharePointManager2013 manager = new SharePointManager2013(username, password);
-
-                string webUrl = manager.GetWebUrl(url);
-                if (!string.IsNullOrEmpty(webUrl))
+                SharePointManager2013 manager = new SharePointManager2013();
+                CurrentContext currentContext = manager.Open(request.Url, request.Username, request.Password);
+                return OpenResponseMapper.MapFrom(currentContext);
+            }
+            catch (InvalidUrlException e)
+            {
+                InvalidUrlFault fault = new InvalidUrlFault()
                 {
-                    string folderUrl = manager.GetFolderUrl(webUrl, url);
+                    Url = e.Url,
+                    Message = e.Message
+                };
 
-                    // generate new session data
-                    Guid sessionId = Guid.NewGuid();
-                    SessionData sessionData = new SessionData()
-                    {
-                        Username = username,
-                        Password = password,
-                        WebUrl = webUrl,
-                        FolderUrl = folderUrl
-                    };
-
-                    // store session data in dictionary
-                    _sessions.Add(sessionId.ToString(), sessionData);
-
-                    return new OpenResponse()
-                    {
-                        StatusCode = (int)OpenResponse.StatusOption.Success,
-                        StatusMessage = OpenResponse.StatusOption.Success.ToString(),
-                        SessionId = sessionId.ToString()
-                    };
-                }
-                else
-                {
-                    return new OpenResponse()
-                    {
-                        StatusCode = (int)OpenResponse.StatusOption.InvalidUrl,
-                        StatusMessage = OpenResponse.StatusOption.InvalidUrl.ToString()
-                    };
-                }
+                throw new FaultException<InvalidUrlFault>(fault, "Error opening the requested URL.");
             }
             catch (Exception e)
             {
-                return new OpenResponse()
-                {
-                    StatusCode = (int)OpenResponse.StatusOption.UnknownError,
-                    StatusMessage = e.Message
-                };
-            }
-        }
-
-        /// <summary>
-        /// Closes the connection and removes the session data.
-        /// </summary>
-        /// <param name="sessionId">Session ID.</param>
-        /// <returns>Specific response object with operation status.</returns>
-        public CloseResponse Close(string sessionId)
-        {
-            try
-            {
-                if (!string.IsNullOrEmpty(sessionId) && _sessions.ContainsKey(sessionId))
-                {
-                    _sessions.Remove(sessionId);
-                    return new CloseResponse()
-                    {
-                        StatusCode = (int)CloseResponse.StatusOption.Success,
-                        StatusMessage = CloseResponse.StatusOption.Success.ToString()
-                    };
-                }
-                else
-                {
-                    return new CloseResponse()
-                    {
-                        StatusCode = (int)CloseResponse.StatusOption.InvalidSession,
-                        StatusMessage = CloseResponse.StatusOption.InvalidSession.ToString()
-                    };
-                }
-            }
-            catch (Exception e)
-            {
-                return new CloseResponse()
-                {
-                    StatusCode = (int)CloseResponse.StatusOption.UnknownError,
-                    StatusMessage = e.Message
-                };
+                throw new FaultException<Exception>(e, "Unexpected error opening the requested URL.");
             }
         }
     }

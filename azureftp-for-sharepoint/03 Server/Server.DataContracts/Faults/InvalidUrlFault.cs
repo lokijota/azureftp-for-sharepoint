@@ -1,4 +1,4 @@
-﻿namespace AzureFtpForSharePoint.Server.DataContracts
+﻿namespace AzureFtpForSharePoint.Server.DataContracts.Faults
 {
     using System;
     using System.Collections.Generic;
@@ -7,12 +7,12 @@
     using System.Text;
 
     [DataContract]
-    public class ServiceResponse
+    public class InvalidUrlFault
     {
         [DataMember]
-        public int StatusCode { get; set; }
+        public string Url { get; set; }
 
         [DataMember]
-        public string StatusMessage { get; set; }
+        public string Message { get; set; }
     }
 }

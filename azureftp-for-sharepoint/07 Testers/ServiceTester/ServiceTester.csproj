@@ -98,7 +98,13 @@
     <None Include="Service References\SharePointFtpService\service3.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\SharePointFtpService\ServiceTester.SharePointFtpService.CloseResponse.datasource">
+    <None Include="Service References\SharePointFtpService\ServiceTester.SharePointFtpService.ChangeDirectoryResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SharePointFtpService\ServiceTester.SharePointFtpService.GetResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SharePointFtpService\ServiceTester.SharePointFtpService.ListResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Service References\SharePointFtpService\ServiceTester.SharePointFtpService.OpenResponse.datasource">

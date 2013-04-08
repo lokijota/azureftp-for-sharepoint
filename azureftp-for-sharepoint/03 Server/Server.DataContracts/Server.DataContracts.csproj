@@ -40,13 +40,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CloseResponse.cs" />
+    <Compile Include="Faults\InvalidUrlFault.cs" />
+    <Compile Include="Parameters\ChangeDirectoryRequest.cs" />
+    <Compile Include="Parameters\ChangeDirectoryResponse.cs" />
     <Compile Include="FolderItem.cs" />
+    <Compile Include="Parameters\GetRequest.cs" />
+    <Compile Include="Parameters\GetResponse.cs" />
     <Compile Include="ItemTypeOption.cs" />
-    <Compile Include="ListResponse.cs" />
-    <Compile Include="OpenResponse.cs" />
+    <Compile Include="Parameters\ListRequest.cs" />
+    <Compile Include="Parameters\ListResponse.cs" />
+    <Compile Include="Parameters\OpenRequest.cs" />
+    <Compile Include="Parameters\OpenResponse.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ServiceResponse.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

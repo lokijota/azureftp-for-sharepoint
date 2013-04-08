@@ -1,50 +1,50 @@
 ﻿<?xml version="1.0" encoding="utf-8"?><Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
     <Fragment>
         <DirectoryRef Id="INSTALLLOCATION">
-            <w:Component Id="cmp33FD6D3452A6CAC19D21752E9C45D379" Guid="{BD784D6D-2B61-45B6-B8C1-16E1B17B553E}" KeyPath="yes" xmlns:w="http://schemas.microsoft.com/wix/2006/wi" />
-            <Component Id="cmpC527E471EA55A6E08FDDE5A0B566F2F6" Guid="{AECEFFCB-9FC9-4AEB-AB40-4B81EAF227A5}">
+            <w:Component Id="cmp33FD6D3452A6CAC19D21752E9C45D379" Guid="{ED2E2660-C657-49E9-9908-16ABA634CAB9}" KeyPath="yes" xmlns:w="http://schemas.microsoft.com/wix/2006/wi" />
+            <Component Id="cmpC527E471EA55A6E08FDDE5A0B566F2F6" Guid="{2AA66804-DD6F-4ECF-AFD5-09188F68E4D9}">
                 <File Id="fil9BF75DDECDC4921BA58C885C5E1A3E6D" KeyPath="yes" Source="$(var.BasePath)\azureftp-for-sharepoint.server.exe.config" />
             </Component>
-            <Component Id="cmp35E16993B5A542E6E51241FC9FD3010E" Guid="{E05AD997-9768-42BA-9F32-C04044CB87AE}">
+            <Component Id="cmp35E16993B5A542E6E51241FC9FD3010E" Guid="{899A633B-B717-4529-A713-760D83D6E298}">
                 <File Id="filD540020D21E767A832F94F6C73A712EE" KeyPath="yes" Source="$(var.BasePath)\azureftp-for-sharepoint.server.pdb" />
             </Component>
-            <Component Id="cmp57DE82AD00A5820E36B6C689B65C154C" Guid="{A5C8FE1E-354A-4A7E-B774-B11FBDEBF1B3}">
+            <Component Id="cmp57DE82AD00A5820E36B6C689B65C154C" Guid="{C26C0B34-5E34-4051-B0E7-48C49B8A0E09}">
                 <File Id="fil406EA73C6A990413F7666FF1D012ED16" KeyPath="yes" Source="$(var.BasePath)\azureftp-for-sharepoint.server.vshost.exe" />
             </Component>
-            <Component Id="cmpC24B4B62283AA7E363F05F735BB7D968" Guid="{79B9EC39-C356-4C72-8976-691706C87B25}">
+            <Component Id="cmpC24B4B62283AA7E363F05F735BB7D968" Guid="{3CAC623A-CD18-4A39-BE6C-FFC75A74425B}">
                 <File Id="fil94BD62BE9F1CEC28AF2AB0B1A957BF64" KeyPath="yes" Source="$(var.BasePath)\azureftp-for-sharepoint.server.vshost.exe.config" />
             </Component>
-            <Component Id="cmp01847B90009F993D011E3D8C4A6E592E" Guid="{573E1D0D-A559-4EBA-9257-E908273408C9}">
+            <Component Id="cmp01847B90009F993D011E3D8C4A6E592E" Guid="{9EACC9E2-0A7C-4E3C-8266-746C728FD530}">
                 <File Id="fil3ED93F244FDE0C317844DFA85F767323" KeyPath="yes" Source="$(var.BasePath)\azureftp-for-sharepoint.server.vshost.exe.manifest" />
             </Component>
-            <Component Id="cmp44E6FBD721BF4EC351B0B9E2F5B3479E" Guid="{3230DF25-FA1B-426A-A5FE-FF1F1097C625}">
+            <Component Id="cmp44E6FBD721BF4EC351B0B9E2F5B3479E" Guid="{BFA71191-4CC8-4154-A8D5-C7C27773D47C}">
                 <File Id="filA880F5AD8529586EEA7520B8F40F496D" KeyPath="yes" Source="$(var.BasePath)\AzureFtpForSharePoint.Core.SharePointLibrary.dll" />
             </Component>
-            <Component Id="cmpA156E6BCA9D023C0959FDEFE04F7488B" Guid="{0FF7C340-4335-44F2-A7CB-5CCC0F1E02D9}">
+            <Component Id="cmpA156E6BCA9D023C0959FDEFE04F7488B" Guid="{C562E020-62CB-4DB5-9837-A972514D88C9}">
                 <File Id="fil0BCB43A989420B0A516AEB914314351F" KeyPath="yes" Source="$(var.BasePath)\AzureFtpForSharePoint.Core.SharePointLibrary.pdb" />
             </Component>
-            <Component Id="cmp81AF928CB283B90BC8E0C6EE3B67F0C9" Guid="{4DA9CB99-6DEF-4A06-8303-B6FA07DE2CC0}">
+            <Component Id="cmp81AF928CB283B90BC8E0C6EE3B67F0C9" Guid="{FF5D00E9-B4A4-4F67-B5F9-4FE48528411A}">
                 <File Id="fil98970C27F3664E5A5E9C725158111360" KeyPath="yes" Source="$(var.BasePath)\AzureFtpForSharePoint.Server.DataContracts.dll" />
             </Component>
-            <Component Id="cmpF0C997E93B4C69917BB49CF504071E78" Guid="{7F335460-770D-419A-97EB-18060EB2CA2D}">
+            <Component Id="cmpF0C997E93B4C69917BB49CF504071E78" Guid="{9BF96CC0-95EE-4426-865A-C861AD0B320C}">
                 <File Id="fil4879FA07E67027A43F93CBFB81D25F39" KeyPath="yes" Source="$(var.BasePath)\AzureFtpForSharePoint.Server.DataContracts.pdb" />
             </Component>
-            <Component Id="cmp65F2329CEA5F7D07E0A8A129F27551E2" Guid="{810C677E-1296-46CF-862A-497C6326D1AF}">
+            <Component Id="cmp65F2329CEA5F7D07E0A8A129F27551E2" Guid="{7A9A7306-C6EE-47CA-AC5F-3A63F98A6717}">
                 <File Id="fil58881FEDF1EEB8AD669B89429BA9FB68" KeyPath="yes" Source="$(var.BasePath)\AzureFtpForSharePoint.Server.Implementation.dll" />
             </Component>
-            <Component Id="cmp35C5399B9BD3CC41E3647094E8666714" Guid="{542DD6C2-315F-46C0-B3C9-F34F62727036}">
+            <Component Id="cmp35C5399B9BD3CC41E3647094E8666714" Guid="{B36505CB-6C27-4CBE-91CD-6676634B55E6}">
                 <File Id="filA4C10FD5811B614C96BF8F03E89556D2" KeyPath="yes" Source="$(var.BasePath)\AzureFtpForSharePoint.Server.Implementation.pdb" />
             </Component>
-            <Component Id="cmp793DFB8FD0B2222EE76D0061AD450DD9" Guid="{F6C8F211-D40B-4E49-80B0-49A6E1CD46A5}">
+            <Component Id="cmp793DFB8FD0B2222EE76D0061AD450DD9" Guid="{A8E539A5-8406-4D0D-B82C-A6611ECFDAB4}">
                 <File Id="filB2E01513D6C38F4472AD4A9AD8C1F7EA" KeyPath="yes" Source="$(var.BasePath)\AzureFtpForSharePoint.Server.ServiceContracts.dll" />
             </Component>
-            <Component Id="cmp2A4D3A11FBB80984F1D50C404530C4B9" Guid="{D3814F57-C058-4CB5-9988-2F4FBA0C3E21}">
+            <Component Id="cmp2A4D3A11FBB80984F1D50C404530C4B9" Guid="{1F1C7541-B0C2-4F92-890C-A914BDC78211}">
                 <File Id="fil233D672A1688269E1E3817740C436AF6" KeyPath="yes" Source="$(var.BasePath)\AzureFtpForSharePoint.Server.ServiceContracts.pdb" />
             </Component>
-            <Component Id="cmpE5C01B5677C30D575CC15B4B558A57E0" Guid="{A75FE8DC-C40F-42E4-861B-85193B720051}">
+            <Component Id="cmpE5C01B5677C30D575CC15B4B558A57E0" Guid="{34A718AE-377F-487F-99DF-08BB2D5C0B6B}">
                 <File Id="filD17F9AFAC4DF3D7A44817DFBA8510C1A" KeyPath="yes" Source="$(var.BasePath)\log4net.dll" />
             </Component>
-            <w:Component Id="cmp877B7234C9DA19A7310544D169C9D4B4" Guid="{537346F1-81A1-4FF7-8F78-E793B900682C}" KeyPath="yes" xmlns:w="http://schemas.microsoft.com/wix/2006/wi" />
+            <w:Component Id="cmp877B7234C9DA19A7310544D169C9D4B4" Guid="{ACDC87B0-09AB-4219-9B55-831524FF82F6}" KeyPath="yes" xmlns:w="http://schemas.microsoft.com/wix/2006/wi" />
         </DirectoryRef>
     </Fragment>
     <Fragment>
