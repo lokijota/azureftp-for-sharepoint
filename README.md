@@ -1,6 +1,8 @@
 azureftp-for-sharepoint
 =======================
 
+** This project in not functional and not being maintained ** 
+
 Interact with a SharePoint in a local intranet via the Service Bus.
 
 The goal of this project is to create a way of interacting with a local SharePoint 2013 instance protected by a firewall, via a set of services exposed in the Azure Service Bus, using an ftp-like interface.
